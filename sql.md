@@ -12,15 +12,84 @@ mysql-practice/
  
  
  
- Introduction  
- What is a Database?
- Windows Installation
- Linux Installation
- Mac OS Installation
- Creating a Table  
- Dropping the Database  
- Writing and Saving our SQL Script  
- Datatypes and Constraints in MySQL  
+   Q1.  Introduction  
+   
+   Q2 . What is a Database?
+  ➡ A database is a container that store related data in organized way . In MySQL , a data base holds one or more tables 
+
+ think of it like :
+ 1# Folder analogy 
+ 1. A data base is like a folder
+ 2. Each table is a fine inside that folder
+ 3. The rows in the table are  like teh content inside each file.
+
+ 2#  Excel analogy :
+ 1. A database is like an Excel workbook
+ 2. Each table is a separate sheet inside the workbook
+ 3. each row in the table is like a row in excel 
+ 
+Q3. Windows Installation
+Q4. Linux Installation
+Q5. Mac OS Installation
+Q6. Creating a Database & Table?
+
+ ➡ To create database 
+ command : CREATE DATABASE startersql;
+ After creating the database , either 
+ :Right -.CLICK it in MySQL Workbench ans slect "Set as default Schema", O 
+ :Use this SQL Command :
+ USE startersql;
+
+  ➡ To create Table
+  
+   CREATE TABLE users (
+   id INT AUTO_INCREMENT PRIMART KEY,
+   name VARCHAR(100) NOT NULL,
+   email VARCHAR(100) UNIQUE NOT NULL,
+   gender ENUM('Male', 'Female','other'),
+   date_of_birth DATE,
+   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+   );
+
+  ➡ TO CHECK THAT TABLE IS CREATED OR NOT ?
+   SELECT * FROM users;
+
+
+  ➡ TYPE OF KEYS:
+  1. PRIMARY KEY
+  2. NULL KEY
+  3. UNIQUE KEY 
+ 
+Q7 Dropping the Database ?
+
+➡ YOU CAN DELETE THE ENTIRE  DATABASE (AND ALL ITS TABLES )    USING:
+COMMANDS :DROP DATABASE startersql;
+(Be careful----this will delete everything in that database )
+
+NOW I DELETE MY DATABASE BUT NOW WHAT I WILL WRITE AGAIN THAT QUERY TO CFREATE DATABASR OR  THEREIS ANY SHORTCUT  SO 
+TO  CREATE AND  DATABASE I WILL WRITE DOWN SCRIPT SO AGAIN AND I DNOT HAVE TRO CREATE OR WRITE THE QUERY 
+
+Q8 Writing and Saving our SQL Script?
+ I can write script Means when you will write the whole query to crete datbase and table then make sure that save the table and  that is know as script and wherever you want to ctreate it again easily you can open the srcipt and   create your database and table 
+ 
+ Q9 Datatypes and Constraints in MySQL ?
+  ➡ TYPE OF DATATYPE
+  1. INT: Integer type, used foe whole number.
+  2. VARCHAR (100): Variable-lenth string, up to 100 characters.
+  3. ENUM:  A string Object witha value chosen from a list of permitted values eg.
+  4. DATE : Stores data values eg date_of_birth DATE 
+    TIMESTAMP : Stores date and time , automatically set to the current timestamp when a row is created
+  5. BOOLEAN : Stores TRUE or FAKSE values , often used for flags like    is_active.
+     TYPE OF CONSTRAINTS:
+
+   1. AUTO_INCREMNET : Automatically generates a unique number for each row 
+   2. PRIMARY KEY: Unquely idenfiies each  row  in the table 
+   3. NOT NULLEnsures a clouns cannot have a Null value 
+   4. UNIQUE: Ensures all Values in a clouns  are different 
+   5. DEFAULT: Sets a default value for a column  if no  is provided eg.
+   6. CREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP , IS_ACTIVE BOOLEAN DEFAULT TRUE
+
+  
  Selecting Data From Table  
  Altering a Table  
  Inserting Data  
@@ -40,6 +109,9 @@ mysql-practice/
  MySQL Indexes  
  Subqueries in MySQL  
 GROUP BY & HAVING in MySQL  
-03:23:59 Stored Procedures in MySQL  
-03:35:46 Triggers in MySQL  
-03:46:43 More on MySQL  
+ Stored Procedures in MySQL  
+ Triggers in MySQL  
+ More on MySQL  
+
+
+
