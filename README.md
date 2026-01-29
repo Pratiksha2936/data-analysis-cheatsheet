@@ -7,7 +7,7 @@ data-analysis-cheatsheet/
 └── projects/
 | Day    | Date       | Daily Update (What I Studied / Practiced) |
 | ------ | ---------- | ----------------------------------------- |
-| Day 1  | 28-01-2026 |                                           |
+| Day 1  | 28-01-2026 |SQL , PROJECT ON EXCEL , INTERVIEW QUESTION|
 | Day 2  | 29-01-2026 |                                           |
 | Day 3  | 30-01-2026 |                                           |
 | Day 4  | 31-01-2026 |                                           |
