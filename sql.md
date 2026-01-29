@@ -10,7 +10,9 @@ mysql-practice/
 └── README.md
 
  
- 
+
+         CODE
+         WITH HARRY
  
    Q1.  Introduction  
    
@@ -90,7 +92,19 @@ Q8 Writing and Saving our SQL Script?
    6. CREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP , IS_ACTIVE BOOLEAN DEFAULT TRUE
 
   
- Selecting Data From Table  
+  Q10. Selecting Data From Table ?
+
+ To select the only all column 
+ SELECT * from users;
+ This fetech every column and every  row from the users table 
+
+ Select Specific Columns 
+ SELECT name, email From users; 
+ THIS ONLY FETECH THE NAME AND EMAIL COLUMNS FROM ALL ROWS
+
+
+ Remaining  a table? 
+ 
  Altering a Table  
  Inserting Data  
  Using Starter SQL  
@@ -112,6 +126,54 @@ GROUP BY & HAVING in MySQL
  Stored Procedures in MySQL  
  Triggers in MySQL  
  More on MySQL  
+
+
+      
+📌 APNA COLLEGE  
+SQL / MySQL Course Topics
+
+➤ What is Database?
+➤ Types of Databases
+➤ Installation of MySQL
+➤ Database Structure
+➤ What is Table?
+➤ Creating our First Database
+➤ Creating our First Table
+➤ SQL Datatypes
+➤ Types of SQL Commands
+➤ Database Related Queries
+➤ Table Related Queries
+➤ SELECT Command
+➤ INSERT Command
+➤ Practice Questions
+➤ Keys
+➤ Constraints
+➤ SELECT Command in Detail
+➤ WHERE Clause
+➤ Operators
+➤ LIMIT Clause
+➤ ORDER BY Clause
+➤ Aggregate Functions
+➤ GROUP BY Clause
+➤ Practice Questions
+➤ HAVING Clause
+➤ General Order of Commands
+➤ UPDATE Command
+➤ DELETE Command
+➤ Revisiting Foreign Keys
+➤ Cascading Foreign Keys
+➤ ALTER Command
+➤ CHANGE and MODIFY Commands
+➤ TRUNCATE Command
+➤ JOINS in SQL
+➤ UNION in SQL
+➤ SQL Sub Queries
+➤ MySQL Views
+
+
+
+
+
 
 
 
