@@ -133,9 +133,30 @@ GROUP BY & HAVING in MySQL
 SQL / MySQL Course Topics
 
 ➤ What is Database?
+  Database is collection of data in a format that can be easily accessed (Digital)
+ A software application uswed to managed our DB IS CALLED DBMS  (Dtatbase Management System )
+ we basically use sql for DBMS 
+
 ➤ Types of Databases
+  there are two types of  database 
+  1. Relational :     Data stored in tables 
+  2. Non-Relational : (NoSQL)
+ We  use SQL to work with relational DBMS 
+➤ What is SQL?
+  SQL is a programmiung language used to interact with        relational databases.
+It is used  to perform CRUD op[eration.
+1. Create
+2. Read
+3. Update
+4. Delete
+ SQL : Structured Query Language
+
 ➤ Installation of MySQL
-➤ Database Structure
+through  wesite you can see it easily 
+
+➤ Database Structure 
+
+
 ➤ What is Table?
 ➤ Creating our First Database
 ➤ Creating our First Table
