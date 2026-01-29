@@ -159,16 +159,196 @@ through  wesite you can see it easily
 
 ➤ What is Table?
 ➤ Creating our First Database
+   CREATE DATABASE db_name;
+   USE db_name; (To the databse that from now i wll work on this database so we use the command USE DATABASE;)
+  
+   To delete the database 
+   DROP DATABASE db_name;
+
 ➤ Creating our First Table
-➤ SQL Datatypes
+ USE db_name;
+
+ CREATE TABLE table_name()
+ column_name1 datatype constraint,
+ column_name2 datatype constraint,
+ column_name3 datatype constraint,
+ );
+ 
+ For e.g
+ CREATE TABLE student
+ (id INT PRIMARY KEY,
+ name VARCHAR(50),
+ age INT NOT NULL);
+ 
+ to insert the data inside the  table 
+ INSERT INTO student VALUES(1,"AMAN" , 26);
+  INSERT INTO student VALUES(1,"SHRADHA" , 24);
+
+  TO CHECK THE TABLE 
+  SELECT * FROM db_table_name;
+  
+ ➤ SQL Datatypes
+  TYPE OF THE DATATYPE 
+  1. CHAR  : FIXED LEGTH STORED 0-255 
+  2. VARCHAR
+  3. BLOB
+  4. INT ; INTERGER VALUE CAN BE STORE (-,+ BOTH )
+  5. BIT : (BIT1 MEANS 0 OR 1 ) ,(BIT2 00,10,01,11)
+  6. fLOAT  ;Decimal number with  TILL 23 DIGIT 
+  7. DOUBLE:  DECIMCAL NUMBER 24 TO 53 DIGITS
+  8. DATE :
+  9. TIME:
+  10. BOOLEAN: TRUE OR FALSE
+  11. SIGNED : INT , FLOAT ,DOUBLE, ....  WHERE THE NUMBER  CAN COME -,+  BOTH
+  12. UNSIGNED:  BUT IN THIS VALUE ALWAYS ONLY COME IN POSTIVE VALUE MEANS POSTIVE  VALUE 
+
+
 ➤ Types of SQL Commands
+  1. DDL Data Definition Language : create drop, truncate, rename 
+  2. DQL data query language : Select
+  3. DML data manipulation language : insert update and delte 
+  4. DCL data control  language : grant & revoke permission to user 
+  5. TCL transaction control language : commit start transaction  rollback
+     
 ➤ Database Related Queries
+ create database db_name;
+ but again if we will right this query than definatly error will come so that we will write  
+  create database if not exists college;
+
+  Drop database db_name;
+  Drop database if exists db_name;
+
+  SHOW DATABASES;
+  SHOW TABLES;
+  
 ➤ Table Related Queries
+ Create 
+ CREATE RABLE table_name(
+ column_name1 datatype constraint,
+ column_name2 datatype constraint,
+ );
+
+DQL COMMAND 
+SELECT * FROM student;
+( to check full table )
+
 ➤ SELECT Command
+ CREATE RABLE table_name(
+ column_name1 datatype constraint,
+ column_name2 datatype constraint,
+ );
+
+DQL COMMAND 
+SELECT * FROM student;
+( to check full table )
+
 ➤ INSERT Command
+INSERT
+INSERT INTO table_name
+(CLOUMN1, COLUMN2)
+VALUES
+(COL1_V1, COL2_V1);
+(COL1_V2, COL2_V2);
+
+INTER INTO student
+(rollno, name)
+VALUES
+(101, "PRIYA")
+(102, "ARTI");
+
+TO THE DATA 
+SELECT * FROM student;
+
+
 ➤ Practice Questions
+Create a database for your company name XYZ 
+STEP 1. Create a table inside  this DB top stie employee info(id ,name and salary) 
+
+STEP2. Add following infomation in the DB :
+1. "adam",25000
+2. "bob", 30000
+3. "casey",40000
+STEP3. Select& view all your table data.
+
+CREATE DATABASE ppsinternational;
+CREATE TABLE employee(
+id INT PRIMARY KEY, 
+name VARCHAR(50),
+salary INT );
+
+INSERT INTO employee
+(id, name, salary)
+VALUES
+(102, "adam",25000);
+(103, "bob", 30000);
+(104, "casey",40000);
+
+TO CHECK THE TABLES 
+SELECT * FROM  TABLE_NAME
+
 ➤ Keys
+ 1. Primary Key
+ it is a cloumn (or set of columns in a tabl;e that uniquely identifies each row .(a unique id ) . There is only 1 PK & it should be NOT null . 
+ 
+ 2. Foreign key
+  A foreign key is a cloumn (or set of column) in atable that refer to the primary key is. Ther can be multiple FKs.
+FKs can have duplicate & null values.
+
+jab table1 ki ek cloumn   jo ki table2 primary key hai to usko table 1  me foriegn key hai .
+
+
 ➤ Constraints
+SQL  Constraints are used to specific rules for data in a table.
+
+NOT NULL cloumn canot have a null value ( COL1 INT NOT NULL)
+UNIOUE all values in cloumn are different (COL2 int unique)
+PRIMARY KEY makes a column unique & not null  but used only  for one 
+
+
+for e.g
+
+create table temp1(
+id int unique);
+insert into temp1 values (101);
+insert into temp2 values (101);
+means ki agar mene create krte time unique  put kiya to    fir dubara vesi id create nhi hogi only one time . 
+
+   (id int primary key)
+   Create table temp1(id INT,
+   name varchar(50),
+   age int,
+   city varchar(50)
+   Primary key (id,name));
+
+
+   it can be written into to way that  one is that   in that particular line with   age or id otherwise 2nd way hai that at button or at last i can write primary key 
+
+   also if i want to combined to thins so i can write .
+
+
+FOREIGN KEY : prevent actions that would  destory  links between tables
+
+
+CREATE TABLE temp(
+cust_id int,
+Foreign key (cust_id) references customer(id));
+
+
+matlab ye haiki basically ye hota hai ki jese tbale 1 se ek clumn ha id ka aur table 2 me wahi id primary key hai to  voh foreign key trarah lika jayega 
+
+DEFAULT : sets the default value of a column 
+
+salary INT DEFAULT 25000;
+
+CHECK : it can set limit  the value allowed in acolumn
+CREATE TABLE CITY 
+
+
+   
+   
+   
+
+
 ➤ SELECT Command in Detail
 ➤ WHERE Clause
 ➤ Operators
