@@ -342,21 +342,145 @@ salary INT DEFAULT 25000;
 
 CHECK : it can set limit  the value allowed in acolumn
 CREATE TABLE CITY 
+CREATE THIS SAMPLE TABLE 
+CREATE DATABASE college;
+USE college;
+
+CREATE TABLE student (
+rollno INT PRIMARY KEY,
+name VARCHAR(50),
+marks INT NOT NULL,
+grade VARCHAR(1),
+city VARCHAR(20));
+
+Insert this data 
 
 
+INSERT INTO student 
+(rollno, name, marks, grade, city)
+Values
+(101, "anil", 780, "C1", "Punee"),
+(103, "anila", 7800, "C2", "Punee"),
+(104, "anilaa", 78000, "C3", "Puneee"),
+(105, "anilaaa", 780000, "C4", "Puneeee"),
+(106, "anilaaaaa", 780000, "C5", "Puneeeee");
    
    
    
 
 
 ➤ SELECT Command in Detail
+  it about to select 
+  how to select
+  SELECT * FROM student; FULL TABLE
+  Select DISTINCT city from student
+  WHENEVER WE WANT UNIQUE DATA NOT A REPEATED DATA SO I WILL    USE ( DISTINCT )
+
 ➤ WHERE Clause
+To define some conditions
+SELECT col1, col2FROM table_name
+WHERE conditions;
+Select * from student where marks > 78;
+select & from student where marks > "Puneee"
+WHERE ISLYIE USED KRTE HAI KI HUM EASILY JAHA KA BHI DATA DEKHNA HAI TO DEKH SAKTE KI JESE 
+
+SELECT * FROM
+STUDENT
+WHERE marks > 80;
+
 ➤ Operators
+we can use operates with where clause 
+Using operators in where 
+arithemic :+-*/ ,% modulus means : 4 % 2 = 0 
++  select * from student where marks+10 > 780;
+-  select * from student where marks-10 > 780;
+*  select * from student where marks*10 > 780;
+/  select * from student where marks/10 > 780;
+%
+comparsion Operators : = , !=, > ,>= , <, <=
+select * from student where marks =780;
+
+Logical opertors 
+AND,OR, NOT, IN, Between, all ,  like , any
+
+Bitwise opertors
+&(Bitwise AND), |(bitwise OR)
+AND (to check for both condition to be true)
+select * from student where marks >90 AND city = "Mumbai" ;
+OR
+select * from student where marks >90 OR  city = "Mumbai" ;
+NOT 
+SELECT * from student where city not in ("Delhi", "Mumbai");
+IN
+SELECT * from student where city IN ("Delhi", "Mumbai");
+Between
+select * from  student where marks Between 780 and 780000;
+
+
 ➤ LIMIT Clause
+sets an upper limit on number of (tuple ) rows to be returned
+Select * from student Limit 3;
+
+select col1,col2 From table_name
+Limit number;
+
 ➤ ORDER BY Clause
+to sort in ascending (ASC) or descending order (DESC)
+select * from student 
+order by city ASC;
+
+SYNTAX
+Select by col1, col2 from table_name
+order by col_name(s) ASC;
+
+select * from student
+order by city DESC;
+
+limit bhi laga sakte hai hum 
+limit 3;
+
 ➤ Aggregate Functions
+Aggregare  function perform a calculation on a set of  values , and return a asingle value 
+
+> count() JESE HUM TEEN NAME DIYE AMAN RAHUL AND ARJUN COUNT FUNCTION BATAYEGA KUI HUMKO 3 NAAM MILE 
+> MAX()  MAX FUNCTION MAX VALUE
+> MIN() MIN VALUE
+> SUM() SUM VALUE 
+> AVG() AVG BATA HAI 
+
+> GET MAXIMUM MARKS
+SELECT MAX(MARKS)
+FROM STUDENT;
+
+> Get average marks
+ SELECT AVG(MARKS)
+  FROM STUDENT;
+
 ➤ GROUP BY Clause
+GROUP ROWS THAT HAVE THE SAME VALUES INTO SUMMARY ROWS 
+IT COLLECT DATA FROM MULTIPLE RECOEDS AND GROUP THE RESULT BY ONE PR MORE COLUMN
+
+GENREALLY WE USE GROUP BY WITH SOME AGGREGATION FINCTION
+jese sare ke sare city ke andr kutne baache oadh rhe hai ye niklne ke liye hum ye likh sakte hai 
+COUNT NUMBER OF STUDENT IN EACH CITY 
+
+SELECT city, count(rollno)
+from student
+GROUP BY city;
+
+
+command 
+select city from student 
+group by city;
+
 ➤ Practice Questions
+1. write the query to find avg marks in each city in ascending order?
+solve : select city avy(marks)
+from student group by city
+order by  city;
+
+
+
 ➤ HAVING Clause
 ➤ General Order of Commands
 ➤ UPDATE Command
