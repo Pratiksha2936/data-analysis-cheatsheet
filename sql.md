@@ -479,6 +479,12 @@ solve : select city avy(marks)
 from student group by city
 order by  city;
 
+Q2 For teh given table , find the total payment according to each payment method.
+
+select mode, Conut(customers) 
+from payemnt 
+GROUP BY  mode;
+
 
 
 ➤ HAVING Clause
