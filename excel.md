@@ -64,8 +64,22 @@ queries?
 
 
 what is data validation  ?
- intergrity kis type a data allow kr rahe hai ki kis type person sheet me entre kr paye .
+intergrity kis type a data allow kr rahe hai ki kis type person sheet me entre kr paye .
 
 GOAL SKEER 
 
- 
+
+DASHBOARD IN  EXCEL 
+1️⃣ Raw Data
+2️⃣ Data Cleaning
+3️⃣ Extra Columns (Formulas)
+4️⃣ Pivot Table
+5️⃣ Charts
+6️⃣ Final Dashboard
+
+
+
+ T O CLEANING DATA  :  CHECK DATA THAT IS DOES HAVE ANY MISSING  NULL VALUE , OR THE 
+
+
+
