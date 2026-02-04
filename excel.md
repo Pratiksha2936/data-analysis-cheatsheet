@@ -81,5 +81,17 @@ DASHBOARD IN  EXCEL
 
  T O CLEANING DATA  :  CHECK DATA THAT IS DOES HAVE ANY MISSING  NULL VALUE , OR THE 
 
+ 21:14:31 - 24:45:52: Excel for Data Analytics
+Introduction to MS Excel
+Basic Functions, Data Validation
+Data Connectors, Conditional Formatting
+Basics of Formatting, Sorting, Filtering Data
+Dealing with Null Values, Duplicate Values
+Trimming Whitespaces, Text Functions
+IF, AND, OR Functions, Date & Time Functions
+COUNTIF, SUMIF Functions, Xlookup
+Power Query, Cleaning and Transformation
+Creating a Dashboard in Excel, myExcel Project
+
 
 
