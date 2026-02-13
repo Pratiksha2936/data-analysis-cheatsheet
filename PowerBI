@@ -121,3 +121,47 @@ Timestamps: 👇
 05:36:18 Career Guidance
 05:38:25 Resume, Portfolio Building & LinkedIn Optimization
 06:01:57 Interview Preparation
+
+
+
+
+
+THE POWER BI DAX 
+
+Timestamps: 
+00:00:00 - Introduction to the Course
+00:00:53 - Introduction to DAX and Its Importance in Power BI
+
+with DAX  you can do :
+
+
+
+
+00:03:17 - What is DAX in Power BI?
+Different expression in DAX :
+Type of the DAX Expressions :
+
+Calculated Columns are DAX expressions that are calulated stored
+as part of the data model  . They create a new cloumn witha value  calculated  on the expression 
+
+Measures are Dax  expressions that pefprm dynamic calculations based on the data being analyzed . Measures aggregate data like Sum ,
+average , count , etc.
+Text function used  ex. that manipulate text data , or join string or join , ya text ko join  krna hai ya contenating ,0extracting
+
+
+
+
+
+time intelligent exp.are dax expressions that peform calculations based on time periods such as year to date , running  totals , etc.
+
+
+
+
+00:06:52 - Steps to Create Calculated Columns in DAX - Power BI
+00:12:26 - Creation of Measures in Power BI and Its Types
+00:17:00 - Understanding DAX Syntax in Power BI
+00:21:14 - DAX Functions in Power BI
+00:24:42 - Date and Time Functions in DAX - Power BI
+00:31:20 - Text Functions Using DAX in Power BI
+00:40:45 - Logical Functions Using DAX in Power BI
+00:47:14 - DAX Operators
